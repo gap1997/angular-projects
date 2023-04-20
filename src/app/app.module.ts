@@ -3,18 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BatchlistComponent } from './batchlist/batchlist.component';
-import { BatchdetilsComponent } from './batchdetils/batchdetils.component';
+import { BatchdetailsComponent } from './batchdetails/batchdetails.component';
+import { MarvellousService } from './marvellous.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    BatchlistComponent,
-    BatchdetilsComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [AppComponent, BatchlistComponent, BatchdetailsComponent],
+  imports: [BrowserModule],
+  providers: [MarvellousService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+  
+}

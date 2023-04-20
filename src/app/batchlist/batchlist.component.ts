@@ -1,14 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MarvellousService } from '../marvellous.service';
 
 @Component({
   selector: 'app-batchlist',
   templateUrl: './batchlist.component.html',
-  styleUrls: ['./batchlist.component.css'],
+  styleUrls: ['./batchlist.component.css']
 })
-export class BatchlistComponent {
-  public batches = [
-    { name: 'PPA', fess: 35000, Duration: '4.5 months' },
-    { name: 'LB', fess: 55000, Duration: '5 months' },
-    { name: 'Angular', fess: 3000, Duration: '4 months' }
-  ];
+export class BatchlistComponent implements OnInit {
+  public batches :any= [];
+  constructor(public mobj: MarvellousService)  {}
+  ngOnInit() {
+    
+     this.batches = this.mobj.getbatchdetails();
+  }
+
 }
+
