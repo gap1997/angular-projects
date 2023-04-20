@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'withservice';
+  public Batches = ["ppa", "lb", "python", "angular", "lsp"]
+
+  public fess = [12, 23, 45, 56, 5859]
 }
