@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { DemoComponent } from './demo/demo.component';
+import { BatchlistComponent } from './batchlist/batchlist.component';
+import { BatchdetilsComponent } from './batchdetils/batchdetils.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DemoComponent
+    BatchlistComponent,
+    BatchdetilsComponent
   ],
   imports: [
     BrowserModule
