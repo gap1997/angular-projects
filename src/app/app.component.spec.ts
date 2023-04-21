@@ -4,28 +4,35 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
+      declarations:
+      [
         AppComponent
       ],
+
     }).compileComponents();
   });
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
+
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'directives'`, () => {
+  it(`should have as title 'twowaydatabinding'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('directives');
+
+    expect(app.title).toEqual('twowaydatabinding');
   });
 
+  
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('directives app is running!');
+
+    expect(compiled.querySelector('.content span')?.textContent).toContain('twowaydatabinding app is running!');
   });
 });
+

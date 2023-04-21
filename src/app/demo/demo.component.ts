@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-demo',
@@ -6,6 +6,6 @@ import { Component} from '@angular/core';
   styleUrls: ['./demo.component.css']
 })
 export class DemoComponent {
-
-  public batch ="Angular"
+  public batchname:string = "";
+  
 }
